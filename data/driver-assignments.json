@@ -1,0 +1,272 @@
+[
+  {
+    "assignmentId": "ASN-301",
+    "orderId": "ORD-1001",
+    "driverId": "DRV-003",
+    "vehicleId": "V-103",
+    "assignedAt": "2026-04-29T08:35:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-302",
+    "orderId": "ORD-1002",
+    "driverId": "DRV-004",
+    "vehicleId": "V-104",
+    "assignedAt": "2026-04-29T07:58:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-303",
+    "orderId": "ORD-1003",
+    "driverId": "DRV-005",
+    "vehicleId": "V-105",
+    "assignedAt": "2026-04-30T09:25:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-304",
+    "orderId": "ORD-1005",
+    "driverId": "DRV-006",
+    "vehicleId": "V-106",
+    "assignedAt": "2026-04-29T16:42:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-305",
+    "orderId": "ORD-1006",
+    "driverId": "DRV-001",
+    "vehicleId": "V-101",
+    "assignedAt": "2026-04-28T11:30:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-306",
+    "orderId": "ORD-1007",
+    "driverId": "DRV-003",
+    "vehicleId": "V-103",
+    "assignedAt": "2026-04-27T09:58:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-307",
+    "orderId": "ORD-1008",
+    "driverId": "DRV-007",
+    "vehicleId": "V-107",
+    "assignedAt": "2026-04-26T14:15:00Z",
+    "unassignedAt": "2026-04-26T16:00:00Z",
+    "status": "failed"
+  },
+  {
+    "assignmentId": "ASN-308",
+    "orderId": "ORD-1010",
+    "driverId": "DRV-008",
+    "vehicleId": "V-108",
+    "assignedAt": "2026-04-29T06:45:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-309",
+    "orderId": "ORD-1011",
+    "driverId": "DRV-002",
+    "vehicleId": "V-102",
+    "assignedAt": "2026-04-28T13:22:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-310",
+    "orderId": "ORD-1012",
+    "driverId": "DRV-001",
+    "vehicleId": "V-101",
+    "assignedAt": "2026-04-30T08:24:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-311",
+    "orderId": "ORD-1015",
+    "driverId": "DRV-007",
+    "vehicleId": "V-107",
+    "assignedAt": "2026-04-28T10:15:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-312",
+    "orderId": "ORD-1017",
+    "driverId": "DRV-004",
+    "vehicleId": "V-104",
+    "assignedAt": "2026-04-27T12:15:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-313",
+    "orderId": "ORD-1019",
+    "driverId": "DRV-009",
+    "vehicleId": "V-109",
+    "assignedAt": "2026-04-28T15:45:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-314",
+    "orderId": "ORD-1020",
+    "driverId": "DRV-005",
+    "vehicleId": "V-105",
+    "assignedAt": "2026-04-29T18:15:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-315",
+    "orderId": "ORD-1022",
+    "driverId": "DRV-008",
+    "vehicleId": "V-108",
+    "assignedAt": "2026-04-27T17:12:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-316",
+    "orderId": "ORD-1024",
+    "driverId": "DRV-010",
+    "vehicleId": "V-110",
+    "assignedAt": "2026-04-28T07:45:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-317",
+    "orderId": "ORD-1026",
+    "driverId": "DRV-001",
+    "vehicleId": "V-101",
+    "assignedAt": "2026-04-27T10:48:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-318",
+    "orderId": "ORD-1027",
+    "driverId": "DRV-002",
+    "vehicleId": "V-102",
+    "assignedAt": "2026-04-30T09:46:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-319",
+    "orderId": "ORD-1029",
+    "driverId": "DRV-003",
+    "vehicleId": "V-103",
+    "assignedAt": "2026-04-29T12:30:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-320",
+    "orderId": "ORD-1030",
+    "driverId": "DRV-005",
+    "vehicleId": "V-105",
+    "assignedAt": "2026-04-30T07:18:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-321",
+    "orderId": "ORD-1032",
+    "driverId": "DRV-007",
+    "vehicleId": "V-107",
+    "assignedAt": "2026-04-28T10:05:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-322",
+    "orderId": "ORD-1033",
+    "driverId": "DRV-004",
+    "vehicleId": "V-104",
+    "assignedAt": "2026-04-27T14:58:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-323",
+    "orderId": "ORD-1036",
+    "driverId": "DRV-010",
+    "vehicleId": "V-110",
+    "assignedAt": "2026-04-26T11:20:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-324",
+    "orderId": "ORD-1038",
+    "driverId": "DRV-010",
+    "vehicleId": "V-110",
+    "assignedAt": "2026-04-30T10:30:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-325",
+    "orderId": "ORD-1040",
+    "driverId": "DRV-009",
+    "vehicleId": "V-109",
+    "assignedAt": "2026-04-29T19:25:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  },
+  {
+    "assignmentId": "ASN-326",
+    "orderId": "ORD-1041",
+    "driverId": "DRV-002",
+    "vehicleId": "V-102",
+    "assignedAt": "2026-04-28T08:08:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-327",
+    "orderId": "ORD-1043",
+    "driverId": "DRV-003",
+    "vehicleId": "V-103",
+    "assignedAt": "2026-04-27T09:35:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-328",
+    "orderId": "ORD-1044",
+    "driverId": "DRV-005",
+    "vehicleId": "V-105",
+    "assignedAt": "2026-04-29T11:55:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-329",
+    "orderId": "ORD-1046",
+    "driverId": "DRV-006",
+    "vehicleId": "V-106",
+    "assignedAt": "2026-04-28T14:05:00Z",
+    "unassignedAt": null,
+    "status": "completed"
+  },
+  {
+    "assignmentId": "ASN-330",
+    "orderId": "ORD-1047",
+    "driverId": "DRV-004",
+    "vehicleId": "V-104",
+    "assignedAt": "2026-04-30T08:55:00Z",
+    "unassignedAt": null,
+    "status": "active"
+  }
+]
