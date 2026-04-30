@@ -1,0 +1,78 @@
+<!-- delivery-dashboard/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelDash – Login</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f62fe">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo-icon">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <h1>DelDash</h1>
+                <p class="tagline">Real‑time delivery orchestration</p>
+            </div>
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label for="role">I am a</label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Select role</option>
+                        <option value="super-admin">Super Admin</option>
+                        <option value="dispatcher">Dispatcher</option>
+                        <option value="delivery-man">Delivery Man</option>
+                        <option value="customer">Customer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Sign In</button>
+            </form>
+            <div id="login-error" class="error-message" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script>
+        // Bootstrap login logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('login-form');
+            form.addEventListener('submit', handleLogin);
+        });
+
+        async function handleLogin(e) {
+            e.preventDefault();
+            const role = document.getElementById('role').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorDiv = document.getElementById('login-error');
+            errorDiv.style.display = 'none';
+
+            try {
+                // auth.js provides authenticate(role, email, password)
+                if (typeof authenticate === 'undefined') {
+                    throw new Error('Authentication module not loaded');
+                }
+                await authenticate(role, email, password);
+                // redirect happens inside auth.js
+            } catch (err) {
+                errorDiv.textContent = err.message;
+                errorDiv.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
