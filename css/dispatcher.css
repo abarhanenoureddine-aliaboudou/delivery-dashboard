@@ -1,0 +1,89 @@
+/* delivery-dashboard/css/dispatcher.css */
+/* Map container */
+.map-container {
+  height: 500px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Quick stats row */
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+/* Order filter bar */
+.order-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+.order-filters select {
+  width: auto;
+  min-width: 150px;
+}
+
+/* Driver availability badges */
+#driver-availability-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.driver-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.driver-badge .status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.status-dot.available { background: var(--color-success); }
+.status-dot.in-use { background: var(--color-warning); }
+.status-dot.maintenance { background: var(--color-danger); }
+
+/* Floating assignment panel */
+.assignment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+.assignment-area {
+  grid-column: 1 / -1;
+}
+.drag-list {
+  list-style: none;
+  min-height: 100px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+.drag-item {
+  background: var(--color-surface);
+  padding: var(--space-xs) var(--space-sm);
+  margin-bottom: var(--space-xs);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-sm);
+  cursor: grab;
+}
+
+/* Map controls */
+.map-controls {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+/* Ensure map container relative for absolute positioning of controls */
+#panel-map-view {
+  position: relative;
+}
