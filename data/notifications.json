@@ -1,0 +1,110 @@
+[
+  {
+    "notificationId": "NTF-001",
+    "userId": "DISP-001",
+    "type": "order_update",
+    "message": "Order MA-8KX2L9 has been delivered to Casablanca.",
+    "read": true,
+    "timestamp": "2026-04-29T10:10:00Z",
+    "relatedOrderId": "ORD-1001"
+  },
+  {
+    "notificationId": "NTF-002",
+    "userId": "DISP-001",
+    "type": "assignment",
+    "message": "Driver Ayoub Haddad assigned to order MA-2CM5FP.",
+    "read": false,
+    "timestamp": "2026-04-28T11:30:00Z",
+    "relatedOrderId": "ORD-1006"
+  },
+  {
+    "notificationId": "NTF-003",
+    "userId": "DISP-002",
+    "type": "system",
+    "message": "New delivery zone added: Tanger-Tetouan-Al Hoceima.",
+    "read": false,
+    "timestamp": "2026-04-30T08:00:00Z",
+    "relatedOrderId": null
+  },
+  {
+    "notificationId": "NTF-004",
+    "userId": "CUST-001",
+    "type": "order_update",
+    "message": "Your order MA-8KX2L9 is out for delivery.",
+    "read": true,
+    "timestamp": "2026-04-29T09:15:00Z",
+    "relatedOrderId": "ORD-1001"
+  },
+  {
+    "notificationId": "NTF-005",
+    "userId": "CUST-002",
+    "type": "order_update",
+    "message": "Your order MA-3PL6WQ has been delivered.",
+    "read": false,
+    "timestamp": "2026-04-29T09:25:00Z",
+    "relatedOrderId": "ORD-1002"
+  },
+  {
+    "notificationId": "NTF-006",
+    "userId": "CUST-008",
+    "type": "order_update",
+    "message": "Order MA-6FG8LM could not be delivered. Reason: Recipient unreachable.",
+    "read": true,
+    "timestamp": "2026-04-26T15:00:00Z",
+    "relatedOrderId": "ORD-1008"
+  },
+  {
+    "notificationId": "NTF-007",
+    "userId": "SA-001",
+    "type": "system",
+    "message": "Vehicle V-109 (Yamaha NMAX) entered maintenance.",
+    "read": false,
+    "timestamp": "2026-04-30T09:00:00Z",
+    "relatedOrderId": null
+  },
+  {
+    "notificationId": "NTF-008",
+    "userId": "DRV-001",
+    "type": "order_update",
+    "message": "Order MA-2CM5FP added to your route.",
+    "read": true,
+    "timestamp": "2026-04-28T11:30:00Z",
+    "relatedOrderId": "ORD-1006"
+  },
+  {
+    "notificationId": "NTF-009",
+    "userId": "DRV-003",
+    "type": "order_update",
+    "message": "You have a new pickup at Rue Oued Ziz, Casablanca.",
+    "read": false,
+    "timestamp": "2026-04-29T08:35:00Z",
+    "relatedOrderId": "ORD-1001"
+  },
+  {
+    "notificationId": "NTF-010",
+    "userId": "DRV-005",
+    "type": "assignment",
+    "message": "Dispatcher assigned you order MA-9DL7TR in Rabat.",
+    "read": false,
+    "timestamp": "2026-04-30T09:25:00Z",
+    "relatedOrderId": "ORD-1003"
+  },
+  {
+    "notificationId": "NTF-011",
+    "userId": "CUST-045",
+    "type": "order_update",
+    "message": "Refund initiated for failed order MA-5BM2PJ.",
+    "read": true,
+    "timestamp": "2026-04-25T14:00:00Z",
+    "relatedOrderId": "ORD-1045"
+  },
+  {
+    "notificationId": "NTF-012",
+    "userId": "DISP-001",
+    "type": "order_update",
+    "message": "Order MA-9KL7QD is now in transit.",
+    "read": false,
+    "timestamp": "2026-04-30T08:50:00Z",
+    "relatedOrderId": "ORD-1012"
+  }
+]
