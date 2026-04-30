@@ -1,0 +1,135 @@
+[
+  {
+    "routeId": "R-201",
+    "driverId": "DRV-001",
+    "orderIds": ["ORD-1006", "ORD-1026", "ORD-1039"],
+    "waypoints": [
+      { "lat": 33.8950, "lng": -5.5547 },
+      { "lat": 33.8945, "lng": -5.5448 },
+      { "lat": 33.8980, "lng": -5.5532 }
+    ],
+    "totalDistance": 5.2,
+    "estimatedTime": 22,
+    "status": "active"
+  },
+  {
+    "routeId": "R-202",
+    "driverId": "DRV-002",
+    "orderIds": ["ORD-1011", "ORD-1027", "ORD-1037"],
+    "waypoints": [
+      { "lat": 30.9203, "lng": -6.8935 },
+      { "lat": 35.5675, "lng": -5.3699 },
+      { "lat": 35.4672, "lng": -6.0361 }
+    ],
+    "totalDistance": 240.5,
+    "estimatedTime": 180,
+    "status": "completed"
+  },
+  {
+    "routeId": "R-203",
+    "driverId": "DRV-003",
+    "orderIds": ["ORD-1001", "ORD-1007", "ORD-1043"],
+    "waypoints": [
+      { "lat": 33.5731, "lng": -7.5898 },
+      { "lat": 35.1688, "lng": -5.2636 },
+      { "lat": 32.2359, "lng": -7.9513 }
+    ],
+    "totalDistance": 310.0,
+    "estimatedTime": 250,
+    "status": "completed"
+  },
+  {
+    "routeId": "R-204",
+    "driverId": "DRV-004",
+    "orderIds": ["ORD-1002", "ORD-1017", "ORD-1033"],
+    "waypoints": [
+      { "lat": 31.6295, "lng": -7.9811 },
+      { "lat": 35.1934, "lng": -6.1502 },
+      { "lat": 35.1699, "lng": -5.2690 }
+    ],
+    "totalDistance": 420.8,
+    "estimatedTime": 300,
+    "status": "active"
+  },
+  {
+    "routeId": "R-205",
+    "driverId": "DRV-005",
+    "orderIds": ["ORD-1003", "ORD-1020", "ORD-1030", "ORD-1044"],
+    "waypoints": [
+      { "lat": 34.0209, "lng": -6.8416 },
+      { "lat": 33.5892, "lng": -7.6181 },
+      { "lat": 32.2961, "lng": -9.2319 },
+      { "lat": 34.2565, "lng": -6.5780 }
+    ],
+    "totalDistance": 75.3,
+    "estimatedTime": 95,
+    "status": "active"
+  },
+  {
+    "routeId": "R-206",
+    "driverId": "DRV-006",
+    "orderIds": ["ORD-1005", "ORD-1021", "ORD-1035", "ORD-1046"],
+    "waypoints": [
+      { "lat": 34.0331, "lng": -5.0000 },
+      { "lat": 35.7742, "lng": -5.8122 },
+      { "lat": 34.0220, "lng": -6.8470 },
+      { "lat": 31.6240, "lng": -7.9945 }
+    ],
+    "totalDistance": 580.2,
+    "estimatedTime": 410,
+    "status": "active"
+  },
+  {
+    "routeId": "R-207",
+    "driverId": "DRV-007",
+    "orderIds": ["ORD-1008", "ORD-1015", "ORD-1032", "ORD-1045"],
+    "waypoints": [
+      { "lat": 31.5085, "lng": -9.7595 },
+      { "lat": 34.2610, "lng": -6.5802 },
+      { "lat": 34.2200, "lng": -4.0100 },
+      { "lat": 31.5120, "lng": -9.7695 }
+    ],
+    "totalDistance": 145.6,
+    "estimatedTime": 190,
+    "status": "active"
+  },
+  {
+    "routeId": "R-208",
+    "driverId": "DRV-008",
+    "orderIds": ["ORD-1010", "ORD-1014", "ORD-1022"],
+    "waypoints": [
+      { "lat": 30.4278, "lng": -9.5981 },
+      { "lat": 35.5710, "lng": -5.3724 },
+      { "lat": 33.5265, "lng": -5.1100 }
+    ],
+    "totalDistance": 590.4,
+    "estimatedTime": 420,
+    "status": "completed"
+  },
+  {
+    "routeId": "R-209",
+    "driverId": "DRV-009",
+    "orderIds": ["ORD-1019", "ORD-1028", "ORD-1040"],
+    "waypoints": [
+      { "lat": 33.2510, "lng": -8.5087 },
+      { "lat": 31.6330, "lng": -7.9883 },
+      { "lat": 31.6317, "lng": -7.9840 }
+    ],
+    "totalDistance": 12.8,
+    "estimatedTime": 30,
+    "status": "planned"
+  },
+  {
+    "routeId": "R-210",
+    "driverId": "DRV-010",
+    "orderIds": ["ORD-1024", "ORD-1036", "ORD-1049"],
+    "waypoints": [
+      { "lat": 33.5490, "lng": -7.6333 },
+      { "lat": 34.0340, "lng": -4.9975 },
+      { "lat": 34.0332, "lng": -4.9990 }
+    ],
+    "totalDistance": 2.4,
+    "estimatedTime": 12,
+    "status": "active"
+  }
+]
