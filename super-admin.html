@@ -1,0 +1,176 @@
+<!-- delivery-dashboard/super-admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelDash – Super Admin</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f62fe">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/super-admin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="lib/leaflet.css">
+</head>
+<body class="dashboard-body">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-truck-fast"></i>
+            <span>DelDash</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-panel="overview"><i class="fas fa-chart-pie"></i> Overview</a>
+            <a href="#" class="nav-item" data-panel="users"><i class="fas fa-users"></i> User Management</a>
+            <a href="#" class="nav-item" data-panel="analytics"><i class="fas fa-chart-line"></i> Analytics</a>
+            <a href="#" class="nav-item" data-panel="notifications"><i class="fas fa-bell"></i> Notifications</a>
+            <a href="#" class="nav-item" data-panel="settings"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button id="logout-btn" class="btn-icon"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-left">
+                <button id="sidebar-toggle" class="btn-icon"><i class="fas fa-bars"></i></button>
+                <h2 class="page-title">Overview</h2>
+            </div>
+            <div class="topbar-right">
+                <div class="user-info" id="current-user-display">
+                    <img src="https://i.pravatar.cc/32" alt="profile" class="avatar-sm">
+                    <span id="user-name">Super Admin</span>
+                </div>
+            </div>
+        </header>
+        <div class="panel-container">
+            <!-- Overview Panel -->
+            <section id="panel-overview" class="panel active">
+                <div class="kpi-grid" id="kpi-cards"><!-- dynamically filled --></div>
+                <div class="chart-row">
+                    <div class="card chart-card">
+                        <h3>Order Volume (Last 7 Days)</h3>
+                        <canvas id="order-volume-chart"></canvas>
+                    </div>
+                    <div class="card chart-card">
+                        <h3>Delivery Success Rate</h3>
+                        <canvas id="success-rate-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+            <!-- User Management Panel -->
+            <section id="panel-users" class="panel">
+                <div class="section-header">
+                    <h3>All Users</h3>
+                    <button id="add-user-btn" class="btn-primary"><i class="fas fa-plus"></i> Add User</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table" id="users-table">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <!-- User form modal will be injected via JS -->
+                <div id="user-form-modal" class="modal hidden">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h4 id="user-form-title">Add New User</h4>
+                        <form id="user-form"></form>
+                    </div>
+                </div>
+            </section>
+            <!-- Analytics Panel -->
+            <section id="panel-analytics" class="panel">
+                <div class="date-filter">
+                    <label for="date-range">Period:</label>
+                    <select id="date-range">
+                        <option value="7">Last 7 days</option>
+                        <option value="30">Last 30 days</option>
+                        <option value="90">Last quarter</option>
+                    </select>
+                </div>
+                <div class="analytics-grid">
+                    <div class="card chart-card">
+                        <h3>Daily Orders</h3>
+                        <canvas id="daily-orders-chart"></canvas>
+                    </div>
+                    <div class="card chart-card">
+                        <h3>Driver Performance</h3>
+                        <canvas id="driver-perf-chart"></canvas>
+                    </div>
+                    <div class="card chart-card">
+                        <h3>Delivery Time Distribution</h3>
+                        <canvas id="delivery-time-distribution-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+            <!-- Notifications Panel -->
+            <section id="panel-notifications" class="panel">
+                <div class="section-header">
+                    <h3>Notification Inbox</h3>
+                    <button id="clear-notifications-btn" class="btn-secondary">Clear All</button>
+                </div>
+                <ul class="notification-list" id="notification-list"></ul>
+            </section>
+            <!-- Settings Panel -->
+            <section id="panel-settings" class="panel">
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" id="company-name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="support-email">Support Email</label>
+                        <input type="email" id="support-email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="polling-interval">Notification Polling (seconds)</label>
+                        <input type="number" id="polling-interval" class="form-control" min="5" max="120">
+                    </div>
+                    <div class="form-group">
+                        <label>Theme</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="theme-switch">
+                            <label for="theme-switch">Dark Mode</label>
+                        </div>
+                    </div>
+                    <button id="save-settings-btn" class="btn-primary">Save Settings</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Notification toast container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="lib/chart.min.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/user-management.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/notification-simulator.js"></script>
+    <script src="js/settings.js"></script>
+    <script>
+        // On page load, bootstrap super-admin dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof app !== 'undefined' && app.init) {
+                app.init('super-admin');
+            } else {
+                // fallback if app.js not loaded
+                console.warn('app.js not loaded, initializing manually');
+                // we can still call necessary init functions from loaded modules
+                if (typeof initSuperAdmin === 'function') initSuperAdmin();
+            }
+        });
+    </script>
+</body>
+</html>
