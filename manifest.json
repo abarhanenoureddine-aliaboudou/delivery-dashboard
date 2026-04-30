@@ -1,0 +1,21 @@
+// delivery-dashboard/manifest.json
+{
+  "name": "Delivery Dashboard",
+  "short_name": "DelDash",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#0f62fe",
+  "icons": [
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHhJREFUeNrs2jEBAAAAgDDrv7qngQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIDAfwIMAF3pAAFz2to/AAAAAElFTkSuQmCC",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAABlBMVEUAAAD///+l2Z/dAAAANklEQVR42u3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAPgAABAAARFkvAAAAAAElFTkSuQmCC",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
