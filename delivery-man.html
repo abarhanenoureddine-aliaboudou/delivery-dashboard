@@ -1,0 +1,119 @@
+<!-- delivery-dashboard/delivery-man.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelDash – Delivery Man</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f62fe">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/delivery-man.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="lib/leaflet.css">
+</head>
+<body class="dashboard-body delivery-man-body">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-truck-fast"></i>
+            <span>DelDash</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-panel="my-orders"><i class="fas fa-clipboard-list"></i> My Orders</a>
+            <a href="#" class="nav-item" data-panel="route-map"><i class="fas fa-route"></i> Route</a>
+            <a href="#" class="nav-item" data-panel="delivery-proof"><i class="fas fa-camera"></i> Proof</a>
+            <a href="#" class="nav-item" data-panel="completed"><i class="fas fa-check-circle"></i> History</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button id="logout-btn" class="btn-icon"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-left">
+                <button id="sidebar-toggle" class="btn-icon"><i class="fas fa-bars"></i></button>
+                <h2 class="page-title">My Deliveries</h2>
+            </div>
+            <div class="topbar-right">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/32" alt="profile" class="avatar-sm">
+                    <span id="current-user-name">Driver</span>
+                </div>
+            </div>
+        </header>
+        <div class="panel-container">
+            <!-- My Orders panel: list of assigned orders with status controls -->
+            <section id="panel-my-orders" class="panel active">
+                <div class="order-list" id="assigned-orders-list">
+                    <!-- each order card rendered dynamically with swipe-to-complete hint -->
+                </div>
+                <div class="status-update-bar">
+                    <button id="update-status-btn" class="btn-primary">Update Status</button>
+                    <select id="new-status-select">
+                        <option value="">Select status</option>
+                        <option value="picked_up">Picked Up</option>
+                        <option value="in_transit">In Transit</option>
+                        <option value="arrived_destination">Arrived</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="failed">Failed</option>
+                    </select>
+                </div>
+            </section>
+            <!-- Route Map panel: optimized route with waypoints -->
+            <section id="panel-route-map" class="panel">
+                <div class="map-container" id="delivery-route-map"></div>
+                <div class="route-summary card" id="route-summary-card">
+                    <h4>Route Summary</h4>
+                    <div class="route-info"><i class="fas fa-map-marker-alt"></i> <span id="stop-count">0 stops</span></div>
+                    <div class="route-info"><i class="fas fa-road"></i> <span id="total-distance">0.0 km</span></div>
+                    <div class="route-info"><i class="fas fa-clock"></i> <span id="estimated-time">0 min</span></div>
+                </div>
+            </section>
+            <!-- Delivery Proof panel: image capture -->
+            <section id="panel-delivery-proof" class="panel">
+                <div class="proof-capture-area">
+                    <h3>Capture Delivery Proof</h3>
+                    <div class="video-container" id="camera-container">
+                        <video id="camera-preview" autoplay playsinline></video>
+                        <button id="capture-btn" class="btn-primary"><i class="fas fa-camera"></i> Take Photo</button>
+                        <input type="file" id="file-input" accept="image/*" capture="camera" style="display: none;">
+                        <button id="upload-btn" class="btn-secondary"><i class="fas fa-upload"></i> Upload from Gallery</button>
+                        <canvas id="proof-canvas" style="display: none;"></canvas>
+                    </div>
+                    <div class="proof-preview" id="proof-preview" style="display: none;">
+                        <h4>Preview</h4>
+                        <img id="proof-image" src="" alt="Proof preview">
+                        <button id="submit-proof-btn" class="btn-success"><i class="fas fa-check"></i> Submit Proof</button>
+                    </div>
+                    <div id="proof-feedback" class="feedback-message"></div>
+                </div>
+            </section>
+            <!-- Completed deliveries history -->
+            <section id="panel-completed" class="panel">
+                <h3>Completed Deliveries</h3>
+                <ul class="history-list" id="completed-deliveries-list"></ul>
+            </section>
+        </div>
+    </main>
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="lib/leaflet.js"></script>
+    <script src="js/map-utils.js"></script>
+    <script src="js/route-map.js"></script>
+    <script src="js/delivery-proof.js"></script>
+    <script src="js/live-tracking.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof app !== 'undefined' && app.init) {
+                app.init('delivery-man');
+            } else {
+                console.warn('app.js missing, manual delivery-man init');
+                if (typeof initDeliveryMan === 'function') initDeliveryMan();
+            }
+        });
+    </script>
+</body>
+</html>
