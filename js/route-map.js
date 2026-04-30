@@ -7,7 +7,15 @@
         let currentRoute = null;
 
         async function loadAndDisplayRoute() {
-            const user = getCurrentUser();
+            // getCurrentUser may be undefined if auth.js not loaded; fallback to localStorage
+            var user = null;
+            if (typeof getCurrentUser === 'function') {
+                user = getCurrentUser();
+            } else {
+                const stored = localStorage.getItem('currentUser');
+                if (stored) user = JSON.parse(stored);
+            }
+
             if (!user || user.role !== 'delivery-man') return;
 
             const [orders, routes, users] = await Promise.all([
