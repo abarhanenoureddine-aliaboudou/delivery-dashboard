@@ -1,0 +1,92 @@
+[
+  {
+    "vehicleId": "V-101",
+    "plateNumber": "12345-أ-6",
+    "make": "Renault",
+    "model": "Express",
+    "type": "van",
+    "status": "in-use",
+    "currentDriver": "DRV-001"
+  },
+  {
+    "vehicleId": "V-102",
+    "plateNumber": "23456-ب-12",
+    "make": "Peugeot",
+    "model": "Partner",
+    "type": "van",
+    "status": "available",
+    "currentDriver": null
+  },
+  {
+    "vehicleId": "V-103",
+    "plateNumber": "34567-ج-8",
+    "make": "Dacia",
+    "model": "Dokker",
+    "type": "van",
+    "status": "in-use",
+    "currentDriver": "DRV-003"
+  },
+  {
+    "vehicleId": "V-104",
+    "plateNumber": "45678-د-15",
+    "make": "Ford",
+    "model": "Transit",
+    "type": "van",
+    "status": "in-use",
+    "currentDriver": "DRV-004"
+  },
+  {
+    "vehicleId": "V-105",
+    "plateNumber": "56789-ه-3",
+    "make": "Citroën",
+    "model": "Berlingo",
+    "type": "car",
+    "status": "in-use",
+    "currentDriver": "DRV-005"
+  },
+  {
+    "vehicleId": "V-106",
+    "plateNumber": "67890-و-22",
+    "make": "Toyota",
+    "model": "Hilux",
+    "type": "car",
+    "status": "available",
+    "currentDriver": null
+  },
+  {
+    "vehicleId": "V-107",
+    "plateNumber": "78901-ط-7",
+    "make": "Hyundai",
+    "model": "H-1",
+    "type": "van",
+    "status": "in-use",
+    "currentDriver": "DRV-007"
+  },
+  {
+    "vehicleId": "V-108",
+    "plateNumber": "89012-ي-9",
+    "make": "Suzuki",
+    "model": "Carry",
+    "type": "bike",
+    "status": "in-use",
+    "currentDriver": "DRV-008"
+  },
+  {
+    "vehicleId": "V-109",
+    "plateNumber": "90123-ك-14",
+    "make": "Yamaha",
+    "model": "NMAX",
+    "type": "bike",
+    "status": "maintenance",
+    "currentDriver": null
+  },
+  {
+    "vehicleId": "V-110",
+    "plateNumber": "11234-ل-5",
+    "make": "Piaggio",
+    "model": "MP3",
+    "type": "bike",
+    "status": "in-use",
+    "currentDriver": "DRV-010"
+  }
+]
