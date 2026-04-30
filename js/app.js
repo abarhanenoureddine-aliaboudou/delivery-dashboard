@@ -90,6 +90,7 @@
     };
     window.initDeliveryMan = window.initDeliveryMan || function() {
         if (typeof initAssignedOrders === 'function') initAssignedOrders();
+        if (typeof initCompletedDeliveries === 'function') initCompletedDeliveries();
         if (typeof initRouteMap === 'function') initRouteMap();
         if (typeof initDeliveryProof === 'function') initDeliveryProof();
     };
