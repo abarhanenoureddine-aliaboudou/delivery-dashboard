@@ -1,0 +1,29 @@
+{
+  "dailyStats": [
+    { "date": "2026-04-24", "totalOrders": 32, "completed": 28, "failed": 4 },
+    { "date": "2026-04-25", "totalOrders": 45, "completed": 39, "failed": 6 },
+    { "date": "2026-04-26", "totalOrders": 51, "completed": 46, "failed": 5 },
+    { "date": "2026-04-27", "totalOrders": 64, "completed": 60, "failed": 4 },
+    { "date": "2026-04-28", "totalOrders": 78, "completed": 74, "failed": 4 },
+    { "date": "2026-04-29", "totalOrders": 94, "completed": 88, "failed": 6 },
+    { "date": "2026-04-30", "totalOrders": 62, "completed": 45, "failed": 2 }
+  ],
+  "driverPerformance": [
+    { "driverId": "DRV-001", "deliveriesCompleted": 42, "avgDeliveryTimeMinutes": 28 },
+    { "driverId": "DRV-002", "deliveriesCompleted": 38, "avgDeliveryTimeMinutes": 34 },
+    { "driverId": "DRV-003", "deliveriesCompleted": 55, "avgDeliveryTimeMinutes": 22 },
+    { "driverId": "DRV-004", "deliveriesCompleted": 47, "avgDeliveryTimeMinutes": 31 },
+    { "driverId": "DRV-005", "deliveriesCompleted": 51, "avgDeliveryTimeMinutes": 26 },
+    { "driverId": "DRV-006", "deliveriesCompleted": 39, "avgDeliveryTimeMinutes": 37 },
+    { "driverId": "DRV-007", "deliveriesCompleted": 44, "avgDeliveryTimeMinutes": 29 },
+    { "driverId": "DRV-008", "deliveriesCompleted": 36, "avgDeliveryTimeMinutes": 35 },
+    { "driverId": "DRV-009", "deliveriesCompleted": 33, "avgDeliveryTimeMinutes": 33 },
+    { "driverId": "DRV-010", "deliveriesCompleted": 41, "avgDeliveryTimeMinutes": 27 }
+  ],
+  "deliveryTimeDistribution": {
+    "under15": 120,
+    "15to30": 215,
+    "30to60": 178,
+    "over60": 67
+  }
+}
