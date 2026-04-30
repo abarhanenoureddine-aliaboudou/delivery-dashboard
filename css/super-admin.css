@@ -1,0 +1,82 @@
+/* delivery-dashboard/css/super-admin.css */
+/* KPI and analytics cards extra styles */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.chart-card {
+  min-height: 300px;
+}
+.chart-card h3 {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+/* User management table enhancements */
+#users-table td.actions-cell {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.data-table .role-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  background: var(--color-info-light);
+  color: var(--color-info);
+}
+
+/* User form modal specific */
+#user-form-modal .modal-content {
+  max-width: 480px;
+}
+#user-form .form-row {
+  display: flex;
+  gap: var(--space-md);
+}
+#user-form .form-row .form-group {
+  flex: 1;
+}
+
+/* Settings panel */
+.settings-form {
+  max-width: 500px;
+}
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.toggle-switch input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: var(--color-border);
+  border-radius: 10px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+.toggle-switch input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  transition: transform var(--transition-fast);
+}
+.toggle-switch input[type="checkbox"]:checked {
+  background: var(--color-primary);
+}
+.toggle-switch input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
