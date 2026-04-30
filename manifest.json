@@ -1,7 +1,7 @@
 {
   "name": "Delivery Dashboard",
   "short_name": "DelDash",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f4f6f8",
   "theme_color": "#0f62fe",
