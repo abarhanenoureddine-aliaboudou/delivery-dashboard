@@ -23,8 +23,11 @@
     }
 
     function isDriverAvailable(driver, vehicles) {
-        const vehicle = vehicles.find(v => v.currentDriver === driver.userId);
-        return vehicle && vehicle.status === 'available';
+        // Find the vehicle assigned to this driver via driver.vehicleId
+        const vehicle = vehicles.find(v => v.vehicleId === driver.vehicleId);
+        // Driver is available if the vehicle exists, is 'available', and either has no current driver or already has this driver
+        return vehicle && vehicle.status === 'available' && 
+               (vehicle.currentDriver === null || vehicle.currentDriver === driver.userId);
     }
 
     function renderUnassignedOrders(orders) {
