@@ -1,0 +1,10 @@
+{
+  "companyName": "DelDash Maroc",
+  "supportEmail": "support@deldash.ma",
+  "defaultMapCenter": {
+    "lat": 31.7917,
+    "lng": -7.0926
+  },
+  "notificationPollingIntervalSeconds": 15,
+  "theme": "light"
+}
