@@ -1,7 +1,7 @@
 // delivery-dashboard/js/map-utils.js
 const MapUtils = (function() {
     // Default center (Bangalore, India) realistic for demo
-    const defaultCenter = [12.9716, 77.5946];
+    const defaultCenter = [30.4333, -9.6000];
     const defaultZoom = 13;
 
     let mapInstance = null;
